@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=3 uid="uid://crj0bco6voyw4"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_5w535"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_5w535")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 448.0
+offset_top = 136.0
+offset_right = 696.0
+offset_bottom = 384.0
+columns = 3
+
+[node name="Button" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="RetryButton" type="Button" parent="."]
+visible = false
+offset_left = 512.0
+offset_top = 408.0
+offset_right = 635.0
+offset_bottom = 466.0
+disabled = true
+text = "Play again?"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 448.0
+offset_top = 80.0
+offset_right = 696.0
+offset_bottom = 120.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="RetryButton" to="." method="_on_retry_button_pressed"]
